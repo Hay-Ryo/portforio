@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RYO Portforio</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <script src="https://kit.fontawesome.com/af791962c9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-10/css/reset.css">
+  <!-- <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-10/css/8-10.css"> -->
+
+<script src="https://unpkg.com/ityped@1.0.3"></script>
+
+</head>
+
+<body>
+  <header class="header" >
+<div class="header-wrapper">
+  <div class="header-container">
+    <div class="title">
+      <div class="type_wrap">
+        <!-- <h1><span id="ityped" class="ityped-cursor"></span></h1> -->
+      </div>
+    
+    </div>
+
+    <div id="header">
+      <div class="headerInner">
+        <h1><span id="ityped" class="ityped-cursor"></span></h1>
+      <nav>
+      <ul class="navLinks">
+      <li><a href="#1">about</a></li>
+      <li><a href="#2">works</a></li>
+      <li><a href="#3">contact</a></li>
+
+      </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      </div>
+      </div>
+</div>
+
+  </div>
+
+</div>
+
+
+  </header>
+
+
+  <div class="main" >
+
+    <video id="main" autoplay loop muted controls:false; src="トップ動画.mp4"></video>
+
+    <section class="about">
+      <h2 id="#1">about</h2>
+      <div class="about-container">
+        <div class="about-photo">
+          <img src="キタサンブラック.png" alt="画像" width="300" height="auto">
+        </div>
+        <div class="about-text">
+          <h3>林 亮介</h3>
+          <p>1988年兵庫県生まれ</p>
+          <p>物心がついた時から競馬を見始める</p>
+          <p>大学生の時にどっぷりハマっていく</p>
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <section class="works curved-works">
+      <h2 class="works-title">works</h2>
+
+      <ul class="works-list">
+        <li>
+          <img src="ビックリマン風.png" alt="画像" width="300" height="auto">
+          <h3>ドリームジャーニー(版画風)</h3>
+        </li>
+        <li>
+          <img src="キタサンブラック.png" alt="画像" width="300" height="auto">
+          <h3>キタサンブラック</h3>
+        </li>
+        <li>
+          <img src="キタサンブラック重ねイラストのコピー.png" alt="画像" width="300" height="auto">
+          <h3>キタサンブラック</h3>
+        </li>
+        <li>
+          <img src="キタサンブラック多重イラスト.png" alt="画像" width="300" height="auto">
+          <h3>キタサンブラック</h3>
+        </li>
+        <li>
+          <img src="キタサンブラック多重ver.png" alt="画像" width="300" height="auto">
+          <h3>キタサンブラック</h3>
+        </li>
+        <li>
+          <img src="NEWアイコン.png" alt="画像" width="300" height="auto">
+          <h3>キタサンブラック</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>contact</h2>
+      <div class="contact-container">
+        <div class="site-container">
+          <p><span class="fa-icon horse"><i class="fa-solid fa-horse"></i></span>オリジナル競馬サイト</p>
+          <h3>  <a href="https://enjoykeiba.com/">EnjoyKEIBA<span class="fa-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a></h3>
+        </div>
+        <div class="mail-container">
+        <p><span class="fa-icon fa-mail"><i class="fa-regular fa-envelope"></i></span>E-mail</p>
+        <h3>realbaki719@gmail.com</h3>
+      </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<footer class="footer">
+<div class="footer-wrapper">
+  <div class="footer-title">
+    <p class="footer-copyright">Ryosuke Hayashi Portforio.</p>
+  </div>
+  <div class="copyright-container">
+    <p class="footer-copyright">All Rights Reserved 2023 ©︎ Ryosuke Hayashi.</p>
+  </div>
+</div>
+</footer>
+
+
+
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- <script href="index.js"></script> -->
+<script>
+  
+ityped.init(document.querySelector("#ityped"), {
+  strings: ['Ryosuke Hayashi', 'Portforio.'],
+  startDelay:500,
+  loop : true,
+  disableBackTyping: false,
+  cursorChar: '🏇',
+  typeSpeed:80,
+  backSpeed:80,
+})
+</script>
+<!-- ヘッダー設定 -->
+<script type="text/javascript" href="main.js">
+  const header = document.getElementById("header");
+  const main = document.getElementById("main");
+
+window.addEventListener('scroll', function(){
+  if (document.body.scrollTop > main.offsetHeight + 60 || document.documentElement.scrollTop > main.offsetHeight + 60
+) {
+    header.classList.add('resize');
+  } else {
+    header.classList.remove('resize');
+  }
+});
+
+//スマホでメニュー表示・非表示
+const navMenu = document.querySelector('.navLinks');
+document.querySelector(".burger").addEventListener('click', () => {
+navMenu.classList.toggle('active');
+},);
+
+// #page-topをクリックした際の設定
+$('#page-top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+
+</script>
+
+</body>
+</html>
