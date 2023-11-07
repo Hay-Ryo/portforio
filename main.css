@@ -92,7 +92,6 @@ font-size: 1.3rem;
 margin: 20px 0px;
 }
 
-
 img{
 max-width: 100%;
 }
@@ -107,6 +106,10 @@ max-width: 100%;
     display: flex;
     flex-direction: column;
   }
+  ul.works-list {
+    padding-left: 0;
+}
+  
   .works-list li{
     margin: 0 auto;
   }
