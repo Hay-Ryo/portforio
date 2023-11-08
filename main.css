@@ -53,6 +53,12 @@ video{
   flex-direction: row;
 
 }
+
+.about-text>p {
+    text-align: left;
+    padding: 0px 50px;
+}
+
 /* .about-photo{
   margin-right: 10%;
 } */
@@ -87,7 +93,6 @@ font-size: 1.3rem;
 }
 
 .works-list{
-  max-width: 1300px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
