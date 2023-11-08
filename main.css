@@ -53,7 +53,9 @@ video{
   flex-direction: row;
 
 }
-
+.about-text>h3 {
+padding: 0 50px;
+}
 .about-text>p {
     text-align: left;
     padding: 0px 50px;
