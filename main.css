@@ -99,6 +99,7 @@ font-size: 1.3rem;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
+  padding-left: 0;
 }
 .works-list img{
 margin: 20px 20px;
